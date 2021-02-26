@@ -1,24 +1,29 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Hello</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/main.css')}}">
-	</head>
-	<body>
-			<div id="wrapper">					<header id="header">
-						<span class="avatar"><img src="{{ url_for('static',filename='images/ava.jpg')}}" alt="" /></span>
-						<h1>I am <strong>Bejjo</strong>, multi functional bot, you can find me on <a href="https://t.me/Bejjox_bot" target="_blank">Telegram</a><br />
-						and also my <a href="/api">API</a>.</h1>
-						<ul class="icons">
-							<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
-					</header>
-			</div>
-	</body>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link href = "{{ url_for('static',filename='assets/css/bot.png')}}" rel="icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/main.css')}}">
+</head>
+<body>
+<div id="login-container">
+  <div class="profile-img"></div>
+  <h1>
+    Bejjo
+  </h1>
+  <div class="description">
+    Bejjo adalah bot multi fungsi, untuk saat ini hanya tersedia pada Telegram. Bejjo telah memiliki 3 akun bot pada Telegram. Bejjo juga mempunya restful API yang dapat digunakan oleh developer lain.
+  </div>
+  <div class="social">
+    <a href="https://t.me/Bejjox_bot" style="text-decoration:none; color: black;" target="_blank">Bejjox</a>
+    <a href="https://t.me/pppbb_bot" style="text-decoration:none; color: black;" target="_blank">Check PP</a>
+    <a href="https://t.me/pkkpdisporapar_bot" style="text-decoration:none; color: black;" target="_blank">PKKP</a>
+  </div>
+  <button onclick="location.href='/api'">My API</button>
+  <footer>
+  </footer>
+</div>
+</body>
 </html>

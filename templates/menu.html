@@ -5,16 +5,34 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/list.css')}}">
 </head>
 <body>
-<section>
-  <div>
-    <h2>Bejjo API List</h2>
-    <ul class="check-list">
-      <li><a href="/api/google/facebook" style="text-decoration:none;">Google Result</a></li>
-      <li><a href="/api/boruto/185" style="text-decoration:none;">Boruto</a></li>
-      <li><a href="" style="text-decoration:none;">YT Downloader(soon)</a></li>
-      <li><a href="" style="text-decoration:none;">Covid-19(soon)</a></li>
+<div class="artboard">
+ <div class="card">
+
+  <div class="card__side card__side--back">
+   <div class="card__cover">
+    <h4 class="card__heading">
+     <span class="card__heading-span">API List</span>
+    </h4>
+   </div>
+   <div class="card__details">
+    <ul>
+     <li><a href="/api/google/flask" style="text-decoration:none; color: black;">Google Result</a></li>
+     <li><a href="/api/boruto/0" style="text-decoration:none; color: black;">Boruto</a></li>
+     <li>Soon</li>
     </ul>
+   </div>
   </div>
-</section>
+
+  <div class="card__side card__side--front">
+   <div class="card__theme">
+    <div class="card__theme-box">
+     <p class="card__subject">Restful API</p>
+     <p class="card__title">Bejjo</p>
+    </div>
+   </div>
+  </div>
+
+ </div>
+</div>
 </body>
 </html>

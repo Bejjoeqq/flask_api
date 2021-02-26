@@ -7,6 +7,7 @@ def googling(pesan):
 	url = 'https://www.google.com/search?q={}&ie=UTF-8'.format(query)
 	headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 	source=requests.get(url, headers=headers).text
+	print(source);input()
 	soup = BeautifulSoup(source, 'html.parser')
 	try:
 		text2 = soup.find("h2",text="Deskripsi").findNext('span')
@@ -65,3 +66,5 @@ def googling(pesan):
 				except:
 					pesan = "Saya tidak menemukan apapun 😕\n"
 					return [pesan],"google"
+if __name__ == '__main__':
+	googling("hello")
