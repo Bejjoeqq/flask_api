@@ -32,4 +32,4 @@ def narutoboruto(selectt=0):
 	return [temp[str(selectt)][1],link,teks]
 
 if __name__ == '__main__':
-	print(narutoboruto(155))
+	print(narutoboruto(189))
